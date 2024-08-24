@@ -1,0 +1,94 @@
+body {
+    background-color: #f5f8ff;
+    font-size: 16px;
+}
+
+/* start of navbar */
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.navbar-nav {
+    flex-grow: 1; /* Navbar'ın ortasında konumlandır */
+    justify-content: center; /* İçeriği ortala */
+    margin: 10px;
+    margin-left: -50px;
+}
+
+.navbar-brand {
+    margin-left: 60px;
+}
+
+.navbar .nav-link {
+    color: #252525;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+.etkinlik-dot {
+    font-size: 0.6rem;
+}
+
+.navbar .nav-item .dropdown-toggle::after {
+    display: none;
+}
+
+/* Dropdown menü sadece üzerine gelindiğinde açılsın */
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar .dropdown-menu {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-top: 4px solid #00c26d; /* Kalın yeşil çizgi */
+}
+
+.navbar .dropdown-item {
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+.navbar .dropdown-item:hover {
+    color: #00c26d;
+    background-color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #00c26d;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #00c26d;
+    border-color: #00c26d;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: rgba(0, 194, 110, 0.778);
+    border-color: rgba(0, 194, 110, 0.778);
+}
+
+.search-bar {
+    width: 300px;
+}
+
+.form-control::placeholder {
+    color:#a4a8b2;
+    font-size: 0.85rem;
+}
+
+.input-group-text {
+    background-color: #ffffff;
+}
+
+.fa-search {
+    color: #878787;
+}
+
+/* end of navbar */
