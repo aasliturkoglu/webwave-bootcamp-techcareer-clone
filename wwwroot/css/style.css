@@ -92,3 +92,264 @@ body {
 }
 
 /* end of navbar */
+
+/* start of slider */
+
+.carousel{
+    padding-top: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+
+.carousel-indicators{
+    bottom: -70px;
+    /* background-color: #2a3249;
+    margin: auto; */
+}
+
+#slider-inner{
+    box-shadow: 15px 15px rgb(0,194,109);
+
+}
+
+.carousel-item img{
+/*     box-shadow: ;
+ */
+}
+
+/* burası neden olmuyor*/
+.carousel-indicators button {
+    /* width: 12px;
+    height: 12px;
+    border-radius: 50%; */
+    
+}
+
+.carousel-control-prev{
+    left: 7px;
+    
+}
+
+.carousel-control-next{
+    right: -7px;
+}
+
+.carousel-control-next-icon , .carousel-control-prev-icon{
+    background-color: green;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #e2e2e2;
+    background-size: 15px 15px;
+}
+
+/* end of slider */
+
+/* start of brand-slider */
+.slider-brand{
+    background-color: #f0f0f0;
+    margin-top: 60px;
+    width: auto;
+    height: 100px;
+}
+
+/* end of brand-slider */
+
+
+/* start of events section */
+
+.events{
+    background-color: #f6f6f6;
+}
+h2{
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.event-card:hover {
+    border: 1px solid black; /* Hover efekti ile siyah border */
+    border-radius: 0.375rem; /* Köşelerin yuvarlatılması (isteğe bağlı) */
+}
+
+.centered-button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.card-title, .card-text{
+    text-align: center;
+    color: black;
+}
+
+.card-text{
+    font-size: 14px;
+}
+
+.card-tag{
+    background-color: rgb(245,248,255);
+    color: #2a3249;
+    border: 1px solid #2a3249;
+    border-radius: 50px;
+    font-size: 13px;
+    text-align: center;
+
+
+}
+
+.card-link{
+    text-decoration: none;
+}
+
+.apply-section {
+    border: 1px solid #ced4da;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.apply-section .apply-button {
+    background-color: #00c26d;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 45px;
+    border: none;
+    
+}
+
+.apply-section .deadline {
+    font-size: 12px;
+    color: #979797;
+}
+
+.apply-section .deadline strong {
+    font-size: 12px;
+    color: #000;
+}
+
+
+/* end of events section */
+
+/* start of why tech career*/
+
+.why-techcareer-section{
+    padding-bottom: 40px;
+    background-color: #fff;
+    padding-bottom: 80px;
+    padding-right: 80px;
+    padding-left: 120px;
+}
+
+.why-techcareer-section h2{
+    padding-top: 30px;
+    text-align: left;
+}
+.feature-text{
+    font-size: 0.9rem;
+}
+
+/* end of why tech career */
+
+/* start of career guide */
+.career-guide{
+    background-color: rgb(239,255,235);
+}
+
+.career-guide h4{
+    color: #00c26d;
+}
+
+.guide{
+    padding-left: 70px;
+    margin-top:40px ;
+}
+
+.guide-text{
+    padding-bottom: 25px;
+}
+
+#guide-btn{
+    margin-bottom: 40px;
+
+}
+
+.banner-img img{
+    width: 600px;
+    height: 300px;
+    
+}
+/* end of career guide */
+
+/* users */
+
+.users-slider{
+    padding-bottom: 40px;
+    background-color: #f6f6f6;
+    padding-bottom: 5px;
+}
+
+.users-title{
+    padding-bottom: 35px;
+    padding-left: 26px;
+}
+
+.user-card{
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+#comments-btn {
+    margin-bottom: 20px;
+    background-color: red;
+}
+
+.user-next{
+    right: 30px;
+    top: -35px;
+}
+
+.user-prev{
+    left: 30px;
+    top: -35px;
+}
+
+/* users */
+
+/*info*/
+
+.info-section{
+    padding-bottom: 40px;
+    background-color: #fff;
+    padding-bottom: 80px;
+    padding-right: 80px;
+    padding-left: 120px;
+    padding-top: 40px;
+}
+
+.info-title{
+padding-bottom: 10px;
+font-size: 2rem;
+font-weight: 100;
+}
+
+.info-text{
+    padding-bottom: 15px;
+}
+
+.info-link a{
+    text-decoration: none;
+    color: #00c26d;
+}
+
+
+.thick-arrow {
+    text-shadow: 1px 0 0 currentColor, 0 1px 0 currentColor, 1px 1px 0 currentColor;
+}
+
+
+
+
+/*info*/

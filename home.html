@@ -15,6 +15,11 @@
     <!--include style.css-->
     <link rel="preload" as="style" href="wwwroot/css/style.css">
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
 </head>
 <body>
 
@@ -27,6 +32,417 @@
 
 <!--     main     -->
     <main>
+
+<!-- en başta veya en sonda takılıyor-->
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+<!--                 buranın içindeki styleı css olarak yazınca olmuyor?-->
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="width: 12px; height: 12px; border-radius: 50%; background-color:#00c26d;"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="width: 12px; height: 12px; border-radius: 50%; background-color:#00c26d;"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="width: 12px; height: 12px; border-radius: 50%; background-color:#00c26d;"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4" style="width: 12px; height: 12px; border-radius: 50%; background-color:#00c26d;"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5" style="width: 12px; height: 12px; border-radius: 50%; background-color:#00c26d;"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6" style="width: 12px; height: 12px; border-radius: 50%; background-color:#00c26d;"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7" style="width: 12px; height: 12px; border-radius: 50%; background-color:#00c26d;"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8" style="width: 12px; height: 12px; border-radius: 50%; background-color:#00c26d;"></button>
+            </div>
+
+            <div class="carousel-inner" id="slider-inner">
+                <div class="carousel-item active" data-bs-interval="1000" >
+                    <a href="#">
+                        <img src="wwwroot/img/slider/slider1.jpeg" class="d-block w-100" alt="... ">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000" sty>
+                    <a href="#">
+                        <img src="wwwroot/img/slider/slider2.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <a href="#">
+                    <img src="wwwroot/img/slider/slider3.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <a href="#">
+                    <img src="wwwroot/img/slider/slider3.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <a href="#"></a>
+                    <img src="wwwroot/img/slider/slider4.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <a href="#">
+                    <img src="wwwroot/img/slider/slider5.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <a href="#">
+                    <img src="wwwroot/img/slider/slider6.jpg" class="d-block w-100" alt="..." >
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <a href="#">
+                    <img src="wwwroot/img/slider/slider7.jpg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <a href="#">
+                    <img src="wwwroot/img/slider/slider8.jpeg" class="d-block w-100" alt="...">
+                    </a>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+<!-- slider-brand -->
+
+<div class="slider-brand">
+    <p>slider ekle</p>
+</div>
+
+<!-- slider-brand -->
+
+<!-- başvuru bekleyen etkinlikler -->
+
+<div class="events">
+
+    <h2>Başvurunu Bekleyen Etkinlikler</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4 d-flex justify-content-center">
+            <a href="#" class="card-link">
+                <div class="card event-card" style="width: 18rem;">
+                    <img src="wwwroot/img/events/event1.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP Prodigy: WebApp Development Bootcamp</h5>
+                        <p class="card-text">Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
+                        <button class="card-tag me-3">Bootcamp</button>
+                        <button class="card-tag">İş Fırsatı</button>
+                    </div>
+                    <div class="apply-section d-flex justify-content-between align-items-center">
+                        <div class="deadline">
+                            SON BAŞVURU: <br>
+                            <strong>01.09.2024</strong>
+                        </div>
+                        <button class="apply-button">Başvur</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <a href="#" class="card-link">
+                <div class="card event-card" style="width: 18rem;">
+                    <img src="wwwroot/img/events/event2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">C# Essentials Bootcamp</h5>
+                        <p class="card-text">Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
+                        <button class="card-tag me-3">Bootcamp</button>
+                        <button class="card-tag">İş Fırsatı</button>
+                    </div>
+                    <div class="apply-section d-flex justify-content-between align-items-center">
+                        <div class="deadline">
+                            SON BAŞVURU: <br>
+                            <strong>01.09.2024</strong>
+                        </div>
+                        <button class="apply-button">Başvur</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <a href="#" class="card-link">
+                <div class="card event-card" style="width: 18rem;">
+                    <img src="wwwroot/img/events/event3.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Intelligence MSSQL Workshop</h5>
+                        <p class="card-text">Ücretsiz öğren, mezun ol, iş fırsatı yakala!</p>
+                        <button class="card-tag me-3">Bootcamp</button>
+                        <button class="card-tag">İş Fırsatı</button>
+                    </div>
+                    <div class="apply-section d-flex justify-content-between align-items-center">
+                        <div class="deadline">
+                            SON BAŞVURU: <br>
+                            <strong>01.09.2024</strong>
+                        </div>
+                        <button class="apply-button">Başvur</button>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="container centered-button">
+        <a href="events.html" class="btn btn-primary">Tüm Etkinlikleri Gör</a>
+    </div>
+
+</div>
+
+<!-- başvuru bekleyen etkinlikler -->
+
+
+<!-- neden tech career -->
+
+<div class="container-fluid why-techcareer-section">
+    <h2>Neden Techcareer.net?</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="feature-icon">
+                <!-- İlgili ikonun HTML/CSS veya SVG kodunu buraya yerleştirin -->
+                <img src="wwwroot/img/icon1.svg" alt="Ücretsiz etkinliklere katıl">
+            </div>
+            <div class="feature-title"><strong>Ücretsiz etkinliklere katıl</strong></div>
+            <div class="feature-text">
+                Yolun başındasın ama en güzel aşamasındasın! Sektörün için gereken tüm becerileri burada öğrenmeye ücretsiz etkinlikler ile başlayacaksın.
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-icon">
+                <!-- İlgili ikonun HTML/CSS veya SVG kodunu buraya yerleştirin -->
+                <img src="wwwroot/img/icon2.svg" alt="Kendini kanıtla">
+            </div>
+            <div class="feature-title"><strong>Kendini kanıtla</strong></div>
+            <div class="feature-text">
+                Bootcamp, Hackathon ve Hiring Challenge etkinliklerine katılarak hem becerilerini geliştirecek hem de ödül kazanma fırsatı yakalayacaksın.
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-icon">
+                <!-- İlgili ikonun HTML/CSS veya SVG kodunu buraya yerleştirin -->
+                <img src="wwwroot/img/icon3.svg" alt="İş fırsatı yakala">
+            </div>
+            <div class="feature-title"><strong>İş fırsatı yakala</strong></div>
+            <div class="feature-text">
+                Sektöründe lider teknoloji şirketleriyle tanışacak ve iş fırsatları yakalayacaksın.
+            </div>
+        </div>
+    </div>
+</div>
+<!-- neden tech career -->
+
+<!-- kariyer rehberi-->
+
+        <div class="container-fluid career-guide">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="guide">
+                        <div class="guide-title"><h1>Kariyer Rehberi’yle Geliş</h1></div>
+                        <div class="sub-title"><h4>Yeni teknoloji kariyerini seçmeye hazır mısın?</h4></div>
+                        <div class="guide-text">Teknoloji alanında kariyer yapmak istiyor ancak hangi pozisyonu seçeceğini
+                        veya seçtiğin pozisyonda hangi adımlardan geçmen gerektiğini bilmiyorsan, Kariyer Rehberi ile en doğru yerdesin!</div>
+                        <a href="#" class="btn btn-primary" id="guide-btn">Hemen İncele</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-img">
+                        <img src="wwwroot/img/banner.png" alt="banner-img">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+<!-- kariyer rehberi-->
+
+<!-- bizi katılımcılarımızdan dinle-->
+
+
+
+<!-- bizi katılımcılarımızdan dinle-->
+<div class="users">
+    
+    <div id="carouselExampleAutoplaying" class="carousel slide users-slider" data-bs-ride="carousel">
+        <div class="carousel-inner">
+        <div class="users-title"><h1>Bizi katılımcılarımızdan Dinle</h1></div>
+        <div class="carousel-item">
+        
+        <div class="row justify-content-center">
+        
+        <div class="col-md-6 d-flex justify-content-center">
+            <a href="#" class="card-link">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="wwwroot/img/profile-icon.avif" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body user-card" >
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem beatae at autem voluptatem recusandae necessitatibus error pariatur obcaecati, nobis, fugiat corrupti ipsam perferendis dignissimos natus numquam architecto accusantium incidunt accusamus repellendus tempore! Accusamus voluptatum, quo deleniti eaque, deserunt eos molestias repellendus, quisquam sint cum error. Facere, ad, delectus nulla fuga tempore sint voluptate mollitia nam magni fugiat assumenda sequi doloribus praesentium iste quaerat eveniet libero quasi dignissimos ipsam debitis. Sapiente cumque quo ratione reiciendis sed voluptates, veritatis maxime iure tenetur ab error ut quod. Exercitationem deleniti voluptatem qui. Quasi in numquam totam repudiandae fugit voluptas neque beatae ipsam, facilis sint!</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+            <a href="#" class="card-link">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="wwwroot/img/profile-icon.avif" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body user-card">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores dicta id perferendis, vel aperiam eaque quidem, dolorem possimus optio consequuntur fuga maiores dolor? Eum, laudantium eos quia laborum eius pariatur consequuntur accusamus veniam. Ullam consequuntur corporis magnam dignissimos? Harum maiores dolores facere deserunt numquam sint quam unde obcaecati eligendi corrupti libero ipsum ex soluta amet, magnam, vero odio temporibus placeat aliquid impedit ad corporis hic! Commodi unde ipsa accusamus aperiam ratione nam deserunt tempore repellat, doloribus voluptas odio voluptatibus minus delectus porro atque officia? Magnam, doloremque porro! Omnis corrupti vero aliquam nam beatae quaerat, deleniti veniam consectetur molestias architecto nemo?</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </a>
+        </div>
+        </div>
+        </div>
+        <div class="carousel-item active">
+        <div class="row justify-content-center">
+        <div class="col-md-6 d-flex justify-content-center">
+            <a href="#" class="card-link">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="wwwroot/img/profile-icon.avif" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body user-card" >
+                            <p class="card-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure amet sapiente animi eos praesentium a deserunt? Ipsam sunt consequuntur sequi, enim quam dolorem ratione! Ab sequi et velit veritatis praesentium eum voluptatibus, consequuntur animi fugiat molestias. Quae, magnam! Eius tempore quae quaerat! Incidunt illo corporis officia vel aliquam voluptatibus sed quas quidem, asperiores ipsum nam nobis repellendus, unde consequuntur error earum rem provident sint exercitationem esse, natus consequatur voluptate! Nihil suscipit cumque, dolore quam sint qui obcaecati ratione repudiandae delectus debitis eveniet quas, omnis nesciunt similique blanditiis, adipisci perferendis voluptatibus? Officiis distinctio temporibus dolore tenetur ducimus at dolorem, modi rerum!</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+            <a href="#" class="card-link">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="wwwroot/img/profile-icon.avif" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body user-card" >
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus culpa sequi itaque, ut incidunt harum delectus ipsum facere quod, corrupti beatae nam repellendus inventore sunt ex perferendis eaque molestias dolor? A, deleniti. Est quam modi culpa, qui architecto earum, rem id nulla similique nesciunt fuga ut tenetur vitae veniam error voluptatem obcaecati adipisci quis rerum voluptates, aliquid dignissimos non minus. Laborum architecto quia possimus, sit aliquam commodi obcaecati, deserunt impedit dolor aliquid perferendis facilis, nihil cupiditate veniam autem reprehenderit eos perspiciatis! Vero qui ut distinctio totam perspiciatis! Ullam, totam. Doloremque, laboriosam praesentium. Molestiae voluptatem beatae tempora enim non, nemo iusto.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </a>
+        </div>
+        </div>
+        </div>
+        <div class="carousel-item">
+        <div class="row justify-content-center">
+        <div class="col-md-6 d-flex justify-content-center">
+            <a href="#" class="card-link">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="wwwroot/img/profile-icon.avif" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body user-card" >
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium delectus aut eius molestiae neque consequuntur dolor id ducimus a corporis, quo blanditiis esse odit minus soluta distinctio, officiis natus ab temporibus perferendis eaque reiciendis inventore sunt. Voluptate voluptas aut non, dolorum quis eius in sequi quisquam ea earum cum quo exercitationem laudantium atque accusamus quibusdam veritatis fugiat alias doloremque impedit provident blanditiis laboriosam facilis. Aperiam aspernatur, ut soluta velit doloribus ad, minima eius eligendi repellat officia expedita recusandae nostrum, ex ea fugit ullam quo magni aliquam suscipit doloremque rem. Voluptate aperiam omnis ut commodi inventore reiciendis ipsam rem debitis sunt?</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+            <a href="#" class="card-link">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="wwwroot/img/profile-icon.avif" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body user-card" >
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, ad quas ipsum error culpa tempore quae animi rem corrupti in commodi nam ut sunt facere optio deserunt incidunt aspernatur enim nobis amet dolor, nesciunt odio? Repellat pariatur ullam aperiam molestias nam maiores aut a, quia quis dolorum reprehenderit eligendi repudiandae sapiente asperiores officiis labore suscipit, nulla facere? Laboriosam id aut in molestiae. Distinctio deleniti voluptate adipisci animi officiis aspernatur tenetur dolorem, accusantium quo enim molestiae pariatur asperiores assumenda, blanditiis tempora repellat. Molestiae ratione quas, omnis rem, eligendi velit, non porro labore provident ipsam eaque fugiat accusamus delectus in reiciendis placeat?</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </a>
+        </div>
+        </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev user-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Öncesi</font></font></span>
+        </button>
+        <button class="carousel-control-next user-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sonraki</font></font></span>
+        </button>
+        <div class="container centered-button">
+            <a href="#" class="btn btn-primary">Tüm Yorumları Gör</a>
+        </div>
+    </div>
+    
+</div>
+
+<!-- info-->
+<div class="container-fluid info-section">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="info-icon">
+                <img src="wwwroot/img/info/bootcamp-icon.svg" alt="">
+            </div>
+            <div class="info-title"><strong>Bootcamp</strong></div>
+            <div class="info-text">
+                Bootcamp etkinlikleri, yazılım teknolojileri, veri bilimi, ürün yönetimi gibi teknolojik konularda düzenlenir. 
+                Hem eğitim alabilir, hem de o alanda işe başlayabilecek kadar fazla bilgi ve donanım kazanabilirsin.
+            </div>
+            <div class="info-link">
+                <a href="#">Hemen Başvur <i class="bi bi-arrow-right thick-arrow"></i></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="info-icon">
+                <!-- İlgili ikonun HTML/CSS veya SVG kodunu buraya yerleştirin -->
+                <img src="wwwroot/img/info/hackathon-icon.svg" alt="">
+            </div>
+            <div class="info-title"><strong>Hackathon</strong></div>
+            <div class="info-text">
+                Hackathon etkinliklerinde takımlar halinde veya bireysel olarak yarışacaksın. 
+                Etkinlik için belli bir zaman verilir ve yeni fikirler, yeni dijital ürünler üretmesi, sonra da bunları kodlaması istenir.
+            </div>
+            <div class="info-link">
+                <a href="#">Hemen Başvur <i class="bi bi-arrow-right thick-arrow"></i></a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="info-icon">
+                <!-- İlgili ikonun HTML/CSS veya SVG kodunu buraya yerleştirin -->
+                <img src="wwwroot/img/icon3.svg" alt="">
+            </div>
+            <div class="info-title"><strong>Hiring Challenge</strong></div>
+            <div class="info-text">
+                Hiring Challenge yarışmalarında Android, iOS, algoritma veya kod hatası gibi problemleri belirli bir zaman aralığı içerisinde çözmeye çalışacaksın.
+                Bu yarışmalarda algoritma tasarımına, özgünlüğe ve kod kalitesine göre puan alırsın.
+            </div>
+            <div class="info-link">
+                <a href="#">Hemen Başvur <i class="bi bi-arrow-right thick-arrow"></i></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- info -->
+
+
 
     </main>
 <!--  end of main   -->
@@ -46,6 +462,9 @@
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
         });
+
+
+
 </script>
 </body>
 </html>
