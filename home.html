@@ -15,10 +15,6 @@
     <!--include style.css-->
     <link rel="preload" as="style" href="wwwroot/css/style.css">
 
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
 
 </head>
 <body>
@@ -474,150 +470,12 @@
 <!--  end of main   -->
 
 
-<!-- start of footer -->
 
-    <footer class="border-top">
-        <div class="container" >
-        <div class="row content-space-1">
-            
-
-            <div class="col-sm mb-7 mb-sm-0">
-            <span class="text-cap">TECHCAREER</span>
-
-            <!-- List -->
-            <ul class="list-unstyled  mb-0">
-                <li><a class="link-sm" href="#">Hakkımızda</a></li>
-                <li><a class="link-sm" href="#">Etkinlikler</a></li>
-                <li><a class="link-sm" href="#">Şirketler İçin</a></li>
-                <li><a class="link-sm" href="#">Eğitmen Ol</a></li>
-                <li><a class="link-sm" href="#">İş Birliği</a></li>
-                <li><a class="link-sm" href="#">İletişim</a></li>
-            </ul>
-            <!-- End List -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm mb-7 mb-sm-0">
-            <span class="text-cap">BAŞVUR</span>
-
-            <!-- List -->
-            <ul class="list-unstyled list-py-1 mb-0">
-                <li><a class="link-sm" href="#">Bootcamp</a></li>
-                <li><a class="link-sm" href="#">Hackathon</a></li>
-                <li><a class="link-sm" href="#">Hiring Challenge</a></li>
-                <li><a class="link-sm" href="#">İş İlanları</a></li>
-            </ul>
-            <!-- End List -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm">
-            <span class="text-cap">SENİN İÇİN</span>
-
-            <!-- List -->
-            <ul class="list-unstyled list-py-1 mb-0">
-                <li><a class="link-sm" href="#">Komünite</a></li>
-                <li><a class="link-sm" href="#">TDC</a></li>
-                <li><a class="link-sm" href="#">Blog</a></li>
-                <li><a class="link-sm" href="#">Podcast</a></li>
-                <li><a class="link-sm" href="#">Kariyer Rehberi</a></li>
-                <li><a class="link-sm" href="#">Teknik Sözlük</a></li>
-
-            </ul>
-            <!-- End List -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col-sm">
-            <span class="text-cap">VERİ POLİTİKAMIZ</span>
-
-            <!-- List -->
-            <ul class="list-unstyled list-py-1 mb-5">
-                <li><a class="link-sm" href="#">Aydınlatma Metni</a></li>
-                <li><a class="link-sm" href="#">Hizmet Sözleşmesi</a></li>
-                <li><a class="link-sm" href="#">Açık Rıza Metni</a></li>
-                <li><a class="link-sm" href="#">Çerez Politikası</a></li>
-
-            </ul>
-            <!-- End List -->
-
-            </div>
-            <!-- End Col -->
-
-
-            <!-- logo part -->
-            <div class="col-lg-3 mb-7 mb-lg-0"  >
-                <div class="logo-sos " >
-                <!-- Logo -->
-                <div class="mb-5">
-                    <a class="navbar-brand" href="#" aria-label="Space">
-                    <img class="navbar-brand-logo" src="wwwroot/img/techcareer-logo.svg" alt="techcareer-logo">
-                    </a>
-                    <p >Türkiye’nin teknoloji kariyeri platformu</p>
-                </div>
-                </div>
-                <!-- End Logo -->
-                
-                <!-- Socials -->
-                <div class="social-media">
-                <span class="text-cap">SOSYAL MEDYA</span>
-                <div class="col-md d-md-flex">
-                    
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item">
-                        <a class="btn btn-icon btn-sm btn-soft-light rounded-circle" href="#">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                        </li>
-                        <li class="list-inline-item">
-                        <a class="btn btn-icon btn-sm btn-soft-light rounded-circle" href="#">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-icon btn-sm btn-soft-light rounded-circle" href="#">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            </li>
-                        <li class="list-inline-item">
-                        <a class="btn btn-icon btn-sm btn-soft-light rounded-circle" href="#">
-                            <i class="bi bi-youtube"></i>
-                        </a>
-                        </li>
-                        <li class="list-inline-item">
-                        <a class="btn btn-icon btn-sm btn-soft-light rounded-circle" href="#">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-                        </li>
-                    </ul>
-                    <!-- End Socials -->
-                    </div>
-                </div>
-                
-    
-    
-                </div>
-                <!-- End Col -->
-
-<!-- logo part -->
-        </div>
-        <!-- End Row -->
-
-        <div class="border-top second-border-top"></div>
-
-        <div class="row align-items-md-end">
-            <div class="col-md mb-md-0">
-                <div class="d-flex flex-wrap gap-3 justify-content-end">
-                <p class="text-copyright ">Tüm hakları saklıdır.</p>
-                <p class="text-copyright mb-0">© Copyright 2024</p>
-                <p class="text-copyright mb-0">support@techcareer.net</p>
-            </div>
-            </div>
-        </div>
-
-        </div>
+<!--  end of footer   -->
+    <footer>
+        <div id="footer-container"></div>
     </footer>
-    <!-- end of footer -->
+<!--  end of footer   -->
 
 
 
@@ -634,6 +492,14 @@
         .then(data => {
             document.getElementById('navbar-container').innerHTML = data;
         });
+
+/*     include footer with js */
+        fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-container').innerHTML = data;
+        });
+
 
 
 
