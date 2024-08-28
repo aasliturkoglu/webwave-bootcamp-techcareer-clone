@@ -78,14 +78,22 @@ body {
     width: 300px;
 }
 
-.form-control::placeholder {
+.search-bar .input-group-text {
+    background-color: #fff;
+    border: 1px solid #e7eaed;
+    border-radius: 15px;
+}
+
+.search-bar .form-control::placeholder {
     color:#a4a8b2;
     font-size: 0.85rem;
 }
 
-.input-group-text {
+/* .input-group-text {
     background-color: #ffffff;
-}
+    background-color: red;
+    border: 1px solid #fff;
+} */
 
 .fa-search {
     color: #878787;
@@ -350,6 +358,109 @@ font-weight: 100;
 }
 
 
-
-
 /*info*/
+
+/*contact info*/
+
+.contact-section{
+    background-color: #2a3249;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+}
+
+.contact-section h2,p{
+    color: #ffffff;
+}
+
+.contact-section h2{
+    margin-bottom: 10px;
+}
+
+.contact-section p{
+    text-align: center;
+}
+
+.contact-section .input-group{
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.input-group .btn-success{
+    color: #fff;
+    background-color: #00c26d;
+    border-color: #00c26d;
+    margin: 10px;
+    
+
+}
+
+.input-group .btn-success:hover{
+    color: #fff;
+    background-color: rgba(0, 194, 110, 0.778);
+    border-color: rgba(0, 194, 110, 0.778);
+}
+
+.input-group-append{
+    background-color: #fff;
+    border-left: none;
+    border-radius: 5px;
+}
+
+.form-control{
+
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#green-text{
+    color: #00c26d;
+    font-weight: 400;
+    padding-top: 25px;
+    font-size: 1.2rem;
+}
+
+#contact-info-text{
+    font-size: 1rem;;
+}
+
+#text-info{
+    font-size: 1.5rem;
+}
+
+.input-group .form-control {
+    border-left: none; /* Remove border between icon and input */
+}
+
+.contact .input-group-text{
+
+    border-radius: 5px;
+    background-color: #ffffff;
+    
+
+}
+
+.contact{
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.bi-envelope-fill{
+    font-size: 30px;
+    color: #878787
+}
+
+.contact .form-control{
+    border-right: none;
+}
+
+
+.contact .form-control::placeholder {
+    color: #c8c8c8;
+    font-size: 1rem;
+    
+}
+
+
+
+/*contact info*/
