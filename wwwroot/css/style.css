@@ -461,6 +461,69 @@ font-weight: 100;
     
 }
 
-
-
 /*contact info*/
+
+/* footer */
+
+.logo-sos img{
+    
+    margin-bottom: 20px;
+    float: left;
+
+}
+
+.logo-sos p{
+    color: #000;
+    float: left;
+    margin-bottom: 40px;
+    
+}
+
+
+.border-top{
+    background-color: #f0f0f0;
+    padding-top: 50px;
+}
+
+.second-border-top{
+    color: #00c26d;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+.text-cap{ /*kategori başlıkları*/
+    color: #adadad;
+}
+
+.link-sm{ /*alt menüler*/
+    color: #252525;
+    text-decoration: none;
+    margin-bottom: 85px;
+}
+
+.text-copyright{
+    color: #adadad ;
+    text-align: right;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-weight: 200;
+}
+
+.border-top .list-unstyled{
+    margin-top: 10px;
+    padding-bottom: 30px;
+
+}
+
+.border-top .list-unstyled li{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+
+
+.social-media .list-inline{
+    margin-top: 20px;
+}
+
+/* footer */
