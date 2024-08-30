@@ -101,12 +101,6 @@ body {
     font-size: 0.85rem;
 }
 
-/* .input-group-text {
-    background-color: #ffffff;
-    background-color: red;
-    border: 1px solid #fff;
-} */
-
 .fa-search {
     color: #878787;
 }
@@ -124,8 +118,6 @@ body {
 
 .carousel-indicators{
     bottom: -70px;
-    /* background-color: #2a3249;
-    margin: auto; */
 }
 
 #slider-inner{
@@ -582,66 +574,51 @@ font-weight: 100;
 
 
 /*Kart bilgileri*/
-.card-custom {
-    border: 2px solid #e6e6e6;
+
+.card-info {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+    margin-top: -60px;
 }
 
-.card-body{
-    background-color: #fff;
-}
-
-.cards-cols{
-    margin: 0px;
-    padding: 0px;
-    margin-bottom: 20px;
-}
-
-#cards-cols-1{
-    border-right: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-
-#cards-cols-2{
-    border-right: none;
-    border-left: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-}
-
-#cards-cols-3{
-    border-right: none;
-    border-left: none;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-}
-
-#cards-cols-4{
-    border-left: none;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-}
-
-.cards-cols h5{
-    color: #8e8e8e;
-    font-size: 1rem;
+.card-info .card-info-row {
+    justify-content: center;
+    align-items: center;
     text-align: left;
+    padding-left: 15px;
 }
 
-.cards-cols p{
+.card-info .col-info:last-child {
+    border-right: none;
+}
+
+.card-info h6{
+    color: #969696;
+}
+
+.card-info p{
     color: #000;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: left;
 }
+
+@media (max-width: 576px) {
+    .card-info .card-info-row {
+        flex-direction: column;
+    }
+
+    .card-info- .col-info {
+        border-right: none;
+    }
+    
+    .card-info-row .col-info:last-child {
+        border-bottom: none;
+    }
+}
+
 /*Kart bilgileri*/
 
 
