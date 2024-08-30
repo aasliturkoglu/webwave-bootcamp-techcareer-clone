@@ -8,29 +8,32 @@ body {
 .navbar {
     background-color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .navbar-nav {
-    flex-grow: 1; /* Navbar'ın ortasında konumlandır */
-    justify-content: center; /* İçeriği ortala */
-    margin: 10px;
-    margin-left: -50px;
+    margin-left: -70px;
+    /*search bar ve linkler arası mesafe*/
 }
 
 .navbar-brand {
-    margin-left: 60px;
+    margin-left: 150px;
+    padding-left: 30px;
+    
+}
+
+.navbar-brand img{
+    transform: scale(1.2);
 }
 
 .navbar .nav-link {
     color: #252525;
-    margin-left: 10px;
+    margin-left: 0px;
     font-size: 1em;
 }
 
 .etkinlik-dot {
     font-size: 0.6rem;
+    color: #00c26d;
 }
 
 .navbar .nav-item .dropdown-toggle::after {
@@ -45,7 +48,7 @@ body {
 .navbar .dropdown-menu {
     border: 1px solid #ddd;
     background-color: #fff;
-    border-top: 4px solid #00c26d; /* Kalın yeşil çizgi */
+    border-top: 4px solid #00c26d;
 }
 
 .navbar .dropdown-item {
@@ -78,11 +81,20 @@ body {
     width: 300px;
 }
 
+.search-bar .form-control:hover,
+.search-bar .form-control:focus {
+    border: 1px solid #000;
+    box-shadow: 0 0 4px rgba(0, 152, 194, 0.515);
+    outline: none;
+}
+
+
 .search-bar .input-group-text {
     background-color: #fff;
     border: 1px solid #e7eaed;
     border-radius: 15px;
 }
+
 
 .search-bar .form-control::placeholder {
     color:#a4a8b2;
@@ -120,22 +132,8 @@ body {
     box-shadow: 15px 15px rgb(0,194,109);
 }
 
-.carousel-item img{
-/*     box-shadow: ;
- */
-}
-
-/* burası neden olmuyor*/
-.carousel-indicators button {
-    /* width: 12px;
-    height: 12px;
-    border-radius: 50%; */
-    
-}
-
 .carousel-control-prev{
     left: 7px;
-    
 }
 
 .carousel-control-next{
@@ -181,7 +179,6 @@ body {
 }
 
 .event-card {
-
     border-radius: 5px;
 }
 
@@ -293,7 +290,6 @@ body {
 .banner-img img{
     width: 600px;
     height: 300px;
-    
 }
 /* end of career guide */
 
@@ -358,7 +354,6 @@ font-weight: 100;
     color: #00c26d;
 }
 
-
 .thick-arrow {
     text-shadow: 1px 0 0 currentColor, 0 1px 0 currentColor, 1px 1px 0 currentColor;
 }
@@ -376,7 +371,6 @@ font-weight: 100;
 
 .contact-section h2,p{
     color: #ffffff;
-    
 }
 
 .contact-section h2{
@@ -433,7 +427,7 @@ font-weight: 100;
 }
 
 .input-group .form-control {
-    border-left: none; /* Remove border between icon and input */
+    border-left: none;
 }
 
 .contact .input-group-text{
@@ -455,7 +449,6 @@ font-weight: 100;
     border-right: none;
 }
 
-
 .contact .form-control::placeholder {
     color: #c8c8c8;
     font-size: 1rem;
@@ -475,7 +468,6 @@ font-weight: 100;
     float: left;
     margin-bottom: 40px;
 }
-
 
 .border-top{
     background-color: #f0f0f0;
@@ -546,9 +538,6 @@ font-weight: 100;
 
 
 /*event details*/
-.banner{
-    
-}
 
 .banner h1{
     background-color: #2a3249;
@@ -599,14 +588,10 @@ font-weight: 100;
     text-align: center;
     border-radius: 10px;
     background-color: #fff;
-
-
-    
 }
 
 .card-body{
     background-color: #fff;
-    
 }
 
 .cards-cols{
@@ -721,7 +706,6 @@ font-weight: 100;
 
 .event-details-container{
     background-color: #f6f6f6;
-
     padding-bottom:50px;
 }
 
@@ -777,7 +761,6 @@ font-weight: 100;
     padding-bottom: 40px;
     font-size: 1.3rem;
     font-weight: 500;
-
 }
 
 /* Açık olduğunda */
